@@ -1,8 +1,8 @@
 class Shoe:
     def __init__(self, brand, size):
         self.brand = brand
-        self.size = size  # This will call the setter
-        self.condition = "Used"  # Initial condition of the shoe
+        self.size = size  
+        self.condition = "Used"  
 
     @property
     def size(self):
@@ -16,5 +16,5 @@ class Shoe:
             self._size = value
 
     def cobble(self):
-        print("Your shoe is as good as new!")  # Output message
-        self.condition = "New"  # Set the condition to "New" after repair
+        print("Your shoe is as good as new!")  
+        self.condition = "New"  
